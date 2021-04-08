@@ -3,16 +3,16 @@ services:
   reverse-proxy:
     build:
       context: reverse-proxy
-    image: khjobran1/reverse-proxy
+    image: mohamedfawzy3011/reverse-proxy
   udagram-backend-user:
     build:
       context: ../udagram-backend-user
-    image: khjobran1/udagram-backend-user
+    image: mohamedfawzy3011/udagram-backend-user
   udagram-backend-feed:
     build:
       context: ../udagram-backend-feed
-    image: khjobran1/udagram-backend-feed
+    image: mohamedfawzy3011/udagram-backend-feed
   udagram-frontend:
     build:
       context: ../udagram-frontend
-    image: khjobran1/udagram-frontend
+    image: mohamedfawzy3011/udagram-frontend
