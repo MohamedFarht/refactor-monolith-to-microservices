@@ -2,20 +2,20 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    service: udagram-frontend
-  name: udagram-frontend
+    service: frontend
+  name: frontend
 spec:
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
-        service: udagram-frontend
-        api: external
+        service: frontend
+        api: external        
     spec:
       containers:
       - image: mohamedfawzy3011/udagram-frontend
-        name: udagram-frontend
-        imagePullPolicy: Always
+        name: frontend
+        imagePullPolicy: Always          
         ports:
         - containerPort: 80
         resources:
@@ -24,5 +24,5 @@ spec:
             cpu: "250m"
           limits:
             memory: "1024Mi"
-            cpu: "500m"
+            cpu: "500m"                
       restartPolicy: Always
