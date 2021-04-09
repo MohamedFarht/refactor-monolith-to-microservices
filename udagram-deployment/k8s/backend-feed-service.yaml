@@ -11,3 +11,4 @@ spec:
     targetPort: 8080
   selector:
     service: udagram-backend-feed
+  type: LoadBalancer
