@@ -5,15 +5,15 @@ metadata:
     service: backend-feed
   name: backend-feed
 spec:
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
         service: backend-feed
     spec:
       containers:
-      - image: udagram-feed
-        name: mohamedfawzy3011/udagram-backend-feed
+      - image: mohamedfawzy3011/udagram-backend-feed
+        name: backend-feed
         imagePullPolicy: Always  
         resources:
           requests:
